@@ -1,7 +1,19 @@
 @font-face { font-family: Bebas; 
     src: url(Fonts/Bebas-Regular.ttf) format("truetype"); 
+}
 
-} 
+@font-face { font-family: Code39; 
+    src: url(Fonts/Code39r.ttf) format("truetype"); 
+}
+
+@font-face { font-family: Monocode; 
+    src: url(Fonts/Monocode.ttf) format("truetype"); 
+}
+@font-face { font-family: Bebas; 
+    src: url(Fonts/Bebas-Regular.ttf) format("truetype"); 
+}
+
+
 body {
     margin: 0;
     background: rgb(255, 255, 255);
@@ -9,22 +21,38 @@ body {
 }
 
 .topbar {
-    background: rgb(12, 12, 12,0.5);
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    background: rgb(255, 255, 255);
 }
 
 .toplogo {
     font-family: "Bebas",sans-serif;
     font-size: 1cm;
     float: left;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
 }
+
+.tinfoh0 { /* BARCODE TEXT */
+    font-family: "Code39",sans-serif;
+    font-size: 1cm;
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 18px;
+    margin-top: 5px;
+    border: 10cm;
+    shape-outside:border-box;
+    transition: all 0.2s; /* transition duration */
+}
+
+.tinfoh0:hover {
+    font-family: "Monocode",sans-serif;
+    margin-top: 10px;
+    opacity: 0.5; /* final state */
+}
+
 .main {
-    margin-top: 73px; /* Add a top margin to avoid content overlay */
+    /*margin-top: 73px; /* Add a top margin to avoid content overlay */
     background: rgb(205, 205, 211);
 }
