@@ -17,11 +17,14 @@
 body {
     margin: 0;
     background: rgb(255, 255, 255);
-    text-align: center;
 }
 
 .topbar {
-    background: rgb(255, 255, 255);
+    cursor: cell;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 
 .toplogo {
@@ -50,9 +53,4 @@ body {
     font-family: "Monocode",sans-serif;
     margin-top: 10px;
     opacity: 0.5; /* final state */
-}
-
-.main {
-    /*margin-top: 73px; /* Add a top margin to avoid content overlay */
-    background: rgb(205, 205, 211);
 }

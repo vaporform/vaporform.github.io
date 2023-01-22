@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main">
-        <div class="topbar">
-            <a class="toplogo">NETWESTS</a>
-            <a class="tinfoh0">HOME</a>
+    <div class="topbar">
+        <a class="toplogo" id="ctext">NETWESTS</a>
+        <a class="tinfoh0">HOME</a>
+        <script>
+            const textContainer = document.getElementById("ctext");
+            window.onscroll = function() {
+            var scroll = window.scrollY;
+            if (scroll > 20) {
+                textContainer.innerHTML = "NW";
+            }
+            if (scroll < 20) {
+                textContainer.innerHTML = "NETWESTS";
+            }
+        }
+        </script>
             
-        </div>
-
-        <div>
-            
-
-        </div>
+    </div>
+    <div>
+        <img src="Pictures/tin.png" alt="Introduction!">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem harum nesciunt unde ipsum doloremque libero quod sapiente minima itaque ipsam distinctio, qui, consequatur impedit adipisci! Quos est reprehenderit dicta.</p>
     </div>
     
+
 </body>
 </html>
