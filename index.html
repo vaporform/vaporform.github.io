@@ -6,28 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div>
+        <img data-tilt src="Pictures/tin.png" alt="Introduction!" style="min-width: 100%; height: auto; width: auto\9;">
+        <hr size=8 noshade>
+
+        <div style="background-color: black; scale: 100%;">
+            <p class="header" style="font-size:2cm;min-width: 100%; position: 30px;background-color: black; color: white;">Proojjjeccts</p>
+        </div>
+    </div>
+
+
     <div class="topbar">
         <a class="toplogo" id="ctext">NETWESTS</a>
+        <script src="JS/main.js"></script>
         <a class="tinfoh0">HOME</a>
-        <script>
-            const textContainer = document.getElementById("ctext");
-            window.onscroll = function() {
-            var scroll = window.scrollY;
-            if (scroll > 20) {
-                textContainer.innerHTML = "NW";
-            }
-            if (scroll < 20) {
-                textContainer.innerHTML = "NETWESTS";
-            }
-        }
-        </script>
-            
     </div>
-    <div>
-        <img src="Pictures/tin.png" alt="Introduction!" style="min-width: 100%; height: auto; width: auto\9;">
-        
-    </div>
+
+<!-- at the end of the body -->
+<script type="text/javascript" src="JS/vanilla-tilt.js"></script>
     
 
 </body>

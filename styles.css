@@ -9,11 +9,14 @@
 @font-face { font-family: Monocode; 
     src: url(Fonts/Monocode.ttf) format("truetype"); 
 }
-@font-face { font-family: Bebas; 
-    src: url(Fonts/Bebas-Regular.ttf) format("truetype"); 
+
+@font-face { font-family: The BoldFont; 
+    src: url(Fonts/THEBOLDFONT.ttf) format("truetype"); 
 }
 
-
+@font-face { font-family: StretchPro;
+    src: url(Fonts/StretchPro.otf) format("opentype");
+}
 body {
     margin: 0;
     background: rgb(255, 255, 255);
@@ -50,29 +53,29 @@ body {
 }
 
 .tinfoh0:hover {
-    animation: 2s anim-flipX ease-in-out;
     font-family: "Monocode",sans-serif;
     margin-top: 10px;
-    opacity: 0.5; /* final state */
+    opacity: 0.5;
 }
 
+.header {
+    font-family: "StretchPro",sans-serif;
+}
 /* flipping class and key frames*/
-.flipX {
-    animation: 5s anim-flipX ease infinite;
-  }
-
-@keyframes anim-flipX {
+@keyframes spin {
     0% {
-      opacity: 0;
-      transform: rotateX(90def);
-    }
-    50% {
-      opacity: 1;
-      transform: rotateX(720deg);
+        font-family: "Code39",sans-serif;
+        transform: rotateY(0deg);
     }
     100% {
-      /* animate nothing to pause animation at the end */
-      opacity: 1;
-      transform: rotateX(720deg);
+        font-family: "Monocode",sans-serif;
+        transform: rotateY(360deg);
     }
-  }
+}
+
+@keyframes texttype {
+    0% {
+    }
+    100% {
+    }
+}
