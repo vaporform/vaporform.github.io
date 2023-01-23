@@ -50,7 +50,29 @@ body {
 }
 
 .tinfoh0:hover {
+    animation: 2s anim-flipX ease-in-out;
     font-family: "Monocode",sans-serif;
     margin-top: 10px;
     opacity: 0.5; /* final state */
 }
+
+/* flipping class and key frames*/
+.flipX {
+    animation: 5s anim-flipX ease infinite;
+  }
+
+@keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
