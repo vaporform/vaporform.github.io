@@ -61,6 +61,13 @@ body {
 .header {
     font-family: "StretchPro",sans-serif;
 }
+
+.slot {
+    background-color: black;
+
+
+}
+
 /* flipping class and key frames*/
 @keyframes spin {
     0% {
