@@ -2,7 +2,7 @@ body {
     background-color: #FFF8E8;
     max-width: 620px;
     margin: 40px auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 header {
@@ -10,10 +10,44 @@ header {
     color: #674636;
 }
 
+h1 {
+    font-size: 24px;
+    color: #674636;
+}
+
+h2 {
+    font-size: 22px;
+    color: #674636;
+}
+
+h3 {
+    font-size: 20px;
+    color: #674636;
+}
 p {
     font-size: 18px;
     color: #6f7a57;
-    line-height: 16px;
-    margin: 10px 50px auto;
-    line-height: 1.6;
+    margin: 10px 20px auto;
+    line-height: 1.2;
+}
+
+@media (prefers-color-scheme:dark){
+    body {
+        background-color: #2C3639;
+    }
+    header{
+        color: #dfd0b8d9;
+    }
+    h1 {
+        color: #dfd0b8d9;
+    }
+    h2{
+        color: #dfd0b8d9;
+    }
+    h3{
+        color: #dfd0b8d9;
+    }
+    p {
+        color: #8fa07a;
+    }
 }
